@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portfolio - Suchitha Patel</title>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Suchitha Patel</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+   <section class="hero">
+  <div class="hero-container">
+    
+    <!-- Intro Text on the Left -->
+    <div class="hero-text">
+      <h2 class="cyber-title">Cybersecurity Analyst</h2>
+      <p class="intro">
+       Hi, I’m Suchitha Patel. I am very passionate about cybersecurity, with a strong focus on phishing detection, 
+        threat intelligence, and cyber defence. I have hands-on experience in static and 
+        dynamic security analysis of Android apps, using tools such as MISP, and conducting 
+        AI-driven security research. I also have a solid understanding of cyber policies 
+        and am skilled in Python and Java for cybersecurity applications, with strong 
+        problem-solving and analytical abilities.
+      </p>
+
+      <!-- Contact Icons -->
+      <div class="hero-links">
+        <a href="mailto:suchithapatel0309@gmail.com" target="_blank" class="hero-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/patel-suchitha-37487014b/" target="_blank" class="hero-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Profile Photo on the Right -->
+    <div class="hero-image">
+      <img src="images/CV professional photo.jpg" alt="Suchitha Patel" class="profile-photo">
+    </div>
+    
+  </div>
+</section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I’m pursuing a Master’s in Cybersecurity & Cyber Defence at the University of Luxembourg
+            and currently working as a Research Assistant in the Sociotechnical Cybersecurity (IRiSC) group.
+            Previously, I worked at Deloitte and ICONMA in resource management and IT recruitment.
+            My goal is to help organizations address evolving security challenges with practical solutions.
+        </p>
+    </section>
+
+     <!-- Skills -->
+    <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Operating Systems</h3>
+                <p>Linux (Ubuntu), Windows, macOS</p>
+            </details>
+        </div>
+
+        <div class="skill-card">
+            <h3>Programming Languages</h3>
+                <p>Java, Python</p>
+            </details>
+        </div>
+
+        <div class="skill-card">
+            <h3>Cybersecurity Concepts</h3>
+                <p>Cyber Policies, Security Risk Analysis, Data Protection Laws, Cryptography, Cyber Defence</p>
+            </details>
+        </div>
+
+        <div class="skill-card">
+            <h3>Tools</h3>
+                <p>MISP, Microsoft Office (Excel, Word, PowerPoint), Avature, JobDiva, Eclipse IDE</p>
+            </details>
+        </div>
+
+        <div class="skill-card">
+            <h3>Soft Skills</h3>
+                <p>Teamwork and collaboration, Research Paper Writing, Problem-solving, Organizational Skills, Communication</p>
+            </details>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+            <!-- Static Android Security Analysis -->
+            <div class="project-card">
+                <h3>Static & Dynamic Security Analysis of Android Apps</h3>
+                <p><strong>Tools:</strong> FlowDroid, Soot, JADX</p>
+                <p>Analyzed 10 Android APKs for potential data leaks using taint analysis. Evaluated timeout impacts and documented sources, sinks, and leaks for each app.</p>
+                <details>
+                    <summary>View Detailed Findings</summary>
+                    <ul>
+                        <li>Timeout extension detects more leaks in certain APKs (e.g., mynt.app.apk, com.hawaiianairlines.app.apk).</li>
+                        <li>Some APKs show no leaks, indicating strong data protection (e.g., com.wooxhome.smart.apk).</li>
+                        <li>Detected leaks include location data, API tokens, clipboard access, media metadata, and contact data.</li>
+                        <li>Decompiled APKs using JADX and analyzed privacy compliance.</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- AI & Cybersecurity -->
+            <div class="project-card">
+                <h3>AI & Cybersecurity: Adversarial Attack Study</h3>
+                <p><strong>Paper:</strong> "Why do adversarial attacks transfer? Explaining transferability of evasion and poisoning attacks" – Demontis et al., USENIX Security 2019</p>
+                <p>This project imitated the study to explore why adversarial attacks transfer between models. Reproduced experiments on evasion and poisoning attacks to understand attack transferability and model vulnerabilities.</p>
+                <details>
+                    <summary>View Key Insights</summary>
+                    <ul>
+                        <li>Reproduced experiments on model transferability for evasion attacks.</li>
+                        <li>Evaluated poisoning attacks and their impact on different classifiers.</li>
+                        <li>Identified factors influencing attack success across models.</li>
+                        <li>Analyzed defense strategies and mitigation techniques.</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Cybersecurity Tool / MISP Evaluation -->
+            <div class="project-card">
+                <h3>Cybersecurity Tool for Threat Intelligence & Forensics</h3>
+                <p><strong>Tool:</strong> MISP (Malware Information Sharing Platform)</p>
+                <p>Each student acted as a cyber threat intelligence analyst to produce intelligence components using a training MISP instance. Additional evidence was gathered, encoded, evaluated, and interpreted for analysis.</p>
+                <details>
+                    <summary>View Project Details</summary>
+                    <ul>
+                        <li>Produced and evaluated MISP events as a threat intelligence analyst.</li>
+                        <li>Interpreted cybersecurity evidence and assessed intelligence quality.</li>
+                        <li>Highlighted differences in analysis based on technical and cultural perspectives.</li>
+                        <li>Contributed bonus points by adding complementary intelligence.</li>
+                    </ul>
+                </details>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <h2>Work Experience</h2>
+        <ul class="timeline">
+            <li>
+                <h3>Research Assistant – University of Luxembourg</h3>
+                <span>2025 – Present</span>
+                <p>Research in phishing, fake websites, and cyber defence.</p>
+            </li>
+            <li>
+                <h3>Senior Analyst / Senior Consultant – Deloitte</h3>
+                <span>2021 – 2024</span>
+                <p>Resource management and IT recruitment across diverse projects.</p>
+            </li>
+            <li>
+                <h3>Recruitment Consultant – ICONMA</h3>
+                <span>2018 – 2021</span>
+                <p>End-to-end IT staffing, building strong business relationships.</p>
+            </li>
+        </ul>
+    </section>
+
+   
+    <!-- Resume -->
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <p>You can view or download my resume below:</p>
+        <a href="Suchitha_Patel_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+        <br><br>
+        <iframe src="Suchitha_Patel_Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+    </section>
+
+    <!-- Contact -->
+   <section id="contact" class="section contact">
+  <h2>Contact Me</h2>
+  <p class="contact-subtitle">I’d love to connect and discuss about cybersecurity, research, or projects.</p>
+
+  <div class="contact-links">
+    <!-- Gmail -->
+    <a href="mailto:suchithapatel0309@gmail.com" target="_blank" class="contact-icon">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/patel-suchitha-37487014b/" target="_blank" class="contact-icon">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Suchitha Patel | Portfolio</p>
+    </footer>
+
+</body>
+</html>
